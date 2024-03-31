@@ -2,37 +2,70 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* General App Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff5e6; /* Light orange, like a warm kitchen */
+  color: #333; /* Dark color for contrast */
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  color: #a52a2a; /* A warm, brick red for main headings */
+  text-align: center;
+}
+
+/* Search Bar Styles */
+.search-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px; /* Or adjust based on your layout */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #a52a2a; /* Same as h1 color */
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar button:hover {
+  background-color: #8b1a1a; /* A darker shade for hover effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Recipe List Styles */
+.recipes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
+
+.recipe-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Add other styles as needed... */
